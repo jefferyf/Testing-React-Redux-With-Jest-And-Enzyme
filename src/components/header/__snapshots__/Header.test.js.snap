@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component snapshot tests renders correctly 1`] = `
+<header
+  data-test="headerComponent"
+>
+  <div
+    className="wrap"
+  >
+    <div
+      className="logo"
+    >
+      <img
+        alt="logo"
+        data-test="logoImg"
+        src="logo.png"
+      />
+    </div>
+  </div>
+</header>
+`;
