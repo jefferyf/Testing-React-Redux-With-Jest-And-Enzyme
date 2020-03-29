@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Component Snapshot Tests Should not render with no title prop 1`] = `""`;
+
+exports[`ListItem Component Snapshot Tests Should render correctly with title prop 1`] = `
+<div
+  data-test="listItemComponent"
+>
+  <h1
+    data-test="title"
+  >
+    Title
+  </h1>
+  <p
+    data-test="desc"
+  >
+    Description
+  </p>
+</div>
+`;

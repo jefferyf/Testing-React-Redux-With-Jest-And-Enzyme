@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SharedButton Component Snapshot Tests renders correctly 1`] = `
+<button
+  data-test="buttonComponent"
+  onClick={[Function]}
+>
+  Press Me
+</button>
+`;
