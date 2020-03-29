@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { findByTestAttr } from '../../../Utils';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import Header from './Header';
 
 const setUp = () => {
@@ -18,11 +18,9 @@ describe('Header Component', () => {
   
   describe('snapshot tests', () => {
     it('renders correctly', () => {
-      const tree = renderer
-        .create(wrapper)
-        .toJSON();
+      const tree = create(wrapper);
   
-      expect(tree).toMatchSnapshot();
+      expect(tree.toJSON()).toMatchSnapshot();
     });
 
     // Personally, I think that snapshot tests are better for this
