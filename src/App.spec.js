@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import { findByTestAttr, testStore } from './../Utils';
 import App from './App';
 
@@ -33,5 +32,18 @@ describe('App Component', () => {
 
   it('should render without errors', () => {
     expect(findByTestAttr(wrapper, 'appComponent').length).toBe(1);
+  });
+
+  it('exampleMethod_udpatesState method should update state as expected', () => {
+    const classInstance = wrapper.instance();
+    classInstance.exampleMethod_udpatesState();
+    const newState = classInstance.state.hideBtn;
+    expect(newState).toBe(true);
+  });
+
+  it('exampleMethod_returnsAValue method should return value as expected', () => {
+    const classInstance = wrapper.instance();
+    const newNum = classInstance.exampleMethod_returnsAValue(1);
+    expect(newNum).toBe(2);
   });
 });
